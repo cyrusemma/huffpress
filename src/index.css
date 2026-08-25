@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* HuffPress Silicon Valley Dark Technical Theme */
 :root {
   --bg-main: #0A0A0F;
@@ -23,9 +25,9 @@
   --accent-amber: #F59E0B;
   --accent-rose: #F43F5E;
   
-  --text-primary: #F1F5F9;
-  --text-secondary: #94A3B8;
-  --text-muted: #64748B;
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
   
   --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -36,6 +38,22 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+select option {
+  background-color: #12121C;
+  color: #F1F5F9;
 }
 
 html, body {
