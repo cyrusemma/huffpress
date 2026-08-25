@@ -6,10 +6,10 @@ import {
   ArchiveRestore, 
   BookOpen, 
   Terminal, 
-  Zap,
   Sparkles
 } from 'lucide-react';
 import { Badge } from '../ui/Badge.jsx';
+import { LogoIcon } from '../ui/LogoIcon.jsx';
 
 export function Sidebar({ activeTab, setActiveTab, stats }) {
   const navItems = [
@@ -52,11 +52,7 @@ export function Sidebar({ activeTab, setActiveTab, stats }) {
       {/* Brand Header */}
       <div>
         <div className="p-5 border-b border-[#1E1E2E]/80 flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-600 via-indigo-600 to-cyan-500 p-0.5 shadow-[0_0_20px_rgba(124,58,237,0.5)]">
-            <div className="w-full h-full bg-[#0A0A0F] rounded-[10px] flex items-center justify-center">
-              <Zap className="w-5 h-5 text-cyan-400" />
-            </div>
-          </div>
+          <LogoIcon size="md" />
           <div>
             <div className="flex items-center gap-1.5">
               <span className="font-display font-bold text-lg tracking-tight gradient-text-hero">

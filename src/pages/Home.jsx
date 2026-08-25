@@ -13,6 +13,7 @@ import {
 import { DropZone } from '../components/upload/DropZone.jsx';
 import { Button } from '../components/ui/Button.jsx';
 import { Badge } from '../components/ui/Badge.jsx';
+import { LogoIcon } from '../components/ui/LogoIcon.jsx';
 
 export function Home({ 
   onTextSubmit, 
@@ -58,16 +59,19 @@ export function Home({
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-cyan-600/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 max-w-3xl">
-          <div className="flex flex-wrap items-center gap-2 mb-4">
-            <Badge variant="violet" size="md" dot>
-              Silicon Valley Engine
-            </Badge>
-            <Badge variant="cyan" size="md">
-              Pure JavaScript DSA
-            </Badge>
-            <Badge variant="green" size="md">
-              100% Lossless
-            </Badge>
+          <div className="flex items-center gap-3 mb-4">
+            <LogoIcon size="md" />
+            <div className="flex flex-wrap items-center gap-2">
+              <Badge variant="violet" size="md" dot>
+                Silicon Valley Engine
+              </Badge>
+              <Badge variant="cyan" size="md">
+                Pure JavaScript DSA
+              </Badge>
+              <Badge variant="green" size="md">
+                100% Lossless
+              </Badge>
+            </div>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-extrabold font-display tracking-tight text-white leading-tight">
